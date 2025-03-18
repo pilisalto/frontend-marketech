@@ -1,0 +1,24 @@
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--white);
+  border: 1px solid var(--gray-medium);
+  border-radius: var(--radius-md);
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 1rem;
+}
+
+.backButton:hover {
+  background: var(--gray-light);
+  border-color: var(--text-color);
+}
+
+.backButton:active {
+  transform: translateY(1px);
+}

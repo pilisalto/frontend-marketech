@@ -1,0 +1,148 @@
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.categoryFilters {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.categoryFilters::-webkit-scrollbar {
+  display: none;
+}
+
+.categoryButton {
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-medium);
+  background: var(--white);
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.categoryButton:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.categoryButton.active {
+  background: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.errorContainer {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.errorContent {
+  text-align: center;
+  max-width: 32rem;
+}
+
+.errorIcon {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.errorTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.errorMessage {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.retryButton {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.retryButton:hover {
+  background: #0052a3;
+}
+
+.noResults {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.noResultsIcon {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.noResultsTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.noResultsSubtitle {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.noResultsSuggestions {
+  list-style: none;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.noResultsSuggestions li {
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.noResultsSuggestions li::before {
+  content: "•";
+  position: absolute;
+  left: 0.5rem;
+  color: var(--primary-color);
+}
+
+.noResultsButton {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.noResultsButton:hover {
+  background: #0052a3;
+}
